@@ -27,7 +27,7 @@ namespace SageAPI.Controllers
       XElement xelement = XElement.Parse("<api:MBXML xmlns:api = 'http://sage100contractor.com/api'></api:MBXML>");
       XElement content1 = new XElement((XName) "MBXMLSessionRq", new object[2]
       {
-        (object) new XElement((XName) "Company", (object) ConfigurationManager.AppSettings["Company"]),
+        (object) new XElement((XName) "Company", "MCS INC"),
         (object) new XElement((XName) "User", (object) "sageAPI")
       });
       XElement content2 = new XElement((XName) "MBXMLMsgsRq", new object[2]
@@ -122,7 +122,7 @@ namespace SageAPI.Controllers
       XElement xelement = XElement.Parse("<api:MBXML xmlns:api = 'http://sage100contractor.com/api'></api:MBXML>");
       XElement content1 = new XElement((XName) "MBXMLSessionRq", new object[2]
       {
-        (object) new XElement((XName) "Company", (object) ConfigurationManager.AppSettings["Company"]),
+        (object) new XElement((XName) "Company", "MCS INC"),
         (object) new XElement((XName) "User", (object) "sageAPI")
       });
       XElement content2 = new XElement((XName) "MBXMLMsgsRq", new object[3]
